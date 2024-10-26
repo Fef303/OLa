@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+unsigned long long sum(unsigned long long start, unsigned long long end)
+{
+unsigned long long n = (end - start+1);
+unsigned long long r = ((start+end)*n)/2;
+return r;
+}
+
+
+
+int main()
+{
+    unsigned long long start, end;
+    scanf("%llu %llu", &start, &end);
+    printf("%llu\n", sum(start,end));
+
+
+
+
+
+
+
+
+return 0;
+}
+
+
+
